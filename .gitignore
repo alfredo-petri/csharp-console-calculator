@@ -1,10 +1,15 @@
 # Pastas geradas pela build
-bin/                 # Saída da compilação: arquivos binários (.exe, .dll, etc.)
-obj/                 # Arquivos intermediários da build (intermediário de compilação)
+**/bin/                 # Saída da compilação: arquivos binários (.exe, .dll, etc.)
+**/obj/                 # Arquivos intermediários da build (intermediário de compilação)
 
 # Pacotes NuGet
 *.nupkg             # Arquivos de pacote NuGet gerados
 packages/           # Pasta de pacotes, caso não esteja usando `PackageReference`
+*.nuget.props          # Arquivo auxiliar do NuGet (gerado em builds)
+*.nuget.targets        # Outro auxiliar do NuGet
+
+# Arquivos de debug
+*.pdb                  # Arquivos de símbolos para debugging (gerados pelo compilador)
 
 # Arquivos temporários do sistema
 *.tmp               # Arquivos temporários
@@ -14,6 +19,11 @@ packages/           # Pasta de pacotes, caso não esteja usando `PackageReferenc
 
 # VS Code
 .vscode/            # Configurações específicas do VS Code (podem conter caminhos locais)
+
+# JetBrains Rider / Resharper
+.idea/                 # Configurações do JetBrains Rider
+_ReSharper*/           # Configurações do ReSharper
+*.DotSettings.user     # Arquivos de preferências do ReSharper
 
 # Configurações pessoais do usuário
 *.user              # Arquivos de configuração do usuário no projeto
@@ -25,6 +35,14 @@ packages/           # Pasta de pacotes, caso não esteja usando `PackageReferenc
 *.bak               # Arquivos de backup
 *.old               # Versões antigas salvas com extensão .old
 
+# Testes e cobertura
+TestResults/           # Resultados de testes (gerado por ferramentas de testes do .NET)
+coverage/              # Relatórios de cobertura de código
+*.coverage             # Arquivos de cobertura
+
 # macOS / Linux / Windows
 .DS_Store           # Arquivo de metadata do macOS
 Thumbs.db           # Miniaturas do Windows
+
+# Arquivos de travamento do .NET
+project.lock.json      # Arquivo de lock antigo do .NET (obsoleto, mas pode aparecer)
