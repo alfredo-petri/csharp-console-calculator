@@ -1,0 +1,30 @@
+# Pastas geradas pela build
+bin/                 # Saída da compilação: arquivos binários (.exe, .dll, etc.)
+obj/                 # Arquivos intermediários da build (intermediário de compilação)
+
+# Pacotes NuGet
+*.nupkg             # Arquivos de pacote NuGet gerados
+packages/           # Pasta de pacotes, caso não esteja usando `PackageReference`
+
+# Arquivos temporários do sistema
+*.tmp               # Arquivos temporários
+*.log               # Arquivos de log (gerados por sua aplicação ou ferramentas)
+*.vspscc            # Arquivos de controle de origem do Visual Studio antigo
+*.vssscc
+
+# VS Code
+.vscode/            # Configurações específicas do VS Code (podem conter caminhos locais)
+
+# Configurações pessoais do usuário
+*.user              # Arquivos de configuração do usuário no projeto
+*.suo               # Arquivo de solução com dados do usuário
+*.sln.docstates     # Estado da janela do Visual Studio
+
+# Arquivos de backup
+*~                  # Backup criado por alguns editores
+*.bak               # Arquivos de backup
+*.old               # Versões antigas salvas com extensão .old
+
+# macOS / Linux / Windows
+.DS_Store           # Arquivo de metadata do macOS
+Thumbs.db           # Miniaturas do Windows
