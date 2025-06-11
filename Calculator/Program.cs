@@ -1,2 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace Calculator
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.Clear();
+            Console.WriteLine("Digite o primeiro valor: ");
+            float value1 = float.Parse(Console.ReadLine());
+            Console.WriteLine("Digite o segundo valor: ");
+            float value2 = float.Parse(Console.ReadLine());
+            Console.WriteLine("");
+            float result = value1 + value2;
+            Console.WriteLine($"O resultado da operação é {result}");
+        }
+    }
+}
