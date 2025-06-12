@@ -10,6 +10,7 @@
 
         static void Menu()
         {
+            Console.Clear();
             Console.WriteLine("Qual operação deseja realizar?");
             Console.WriteLine("");
             Console.WriteLine("1 - Adição");
@@ -20,6 +21,15 @@
             Console.Write("Selecione a opção desejada: ");
 
             short option = short.Parse(Console.ReadLine());
+
+            switch (option)
+            {
+                case 1: Sum(); break;
+                case 2: Subtraction(); break;
+                case 3: Multiplication(); break;
+                case 4: Division(); break;
+                default: Menu(); break;
+            }
         }
 
         static void Sum()
