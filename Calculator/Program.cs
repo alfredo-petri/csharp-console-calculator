@@ -17,6 +17,7 @@
             Console.WriteLine("2 - Subtração");
             Console.WriteLine("3 - Multiplicação");
             Console.WriteLine("4 - Divisão");
+            Console.WriteLine("5 - Sair");
             Console.WriteLine("");
             Console.Write("Selecione a opção desejada: ");
 
@@ -28,6 +29,7 @@
                 case 2: Subtraction(); break;
                 case 3: Multiplication(); break;
                 case 4: Division(); break;
+                case 5: Exit(); break;
                 default: Menu(); break;
             }
         }
@@ -118,6 +120,14 @@
             Console.Write("pressione alguma tecla para retornar ao menu: ");
             Console.ReadKey();
             Menu();
+        }
+
+        static void Exit()
+        {
+            Console.Clear();
+            Console.WriteLine("Obrigado por usar esta aplicação.");
+            Console.WriteLine("");
+            Environment.Exit(0);
         }
     }
 }
