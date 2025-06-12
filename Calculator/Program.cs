@@ -5,7 +5,21 @@
         static void Main(string[] args)
         {
             Console.Clear();
-            Multiplication();
+            Menu();
+        }
+
+        static void Menu()
+        {
+            Console.WriteLine("Qual operação deseja realizar?");
+            Console.WriteLine("");
+            Console.WriteLine("1 - Adição");
+            Console.WriteLine("2 - Subtração");
+            Console.WriteLine("3 - Multiplicação");
+            Console.WriteLine("4 - Divisão");
+            Console.WriteLine("");
+            Console.Write("Selecione a opção desejada: ");
+
+            short option = short.Parse(Console.ReadLine());
         }
 
         static void Sum()
@@ -23,7 +37,7 @@
             float result = value1 + value2;
 
             Console.WriteLine($"O resultado da operação é {result}");
-            
+
             Console.WriteLine("");
         }
         
@@ -45,24 +59,6 @@
 
             Console.WriteLine("");
         }
-        static void Division()
-        {
-            Console.Clear();
-
-            Console.WriteLine("Digite o primeiro valor: ");
-            float value1 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("Digite o segundo valor: ");
-            float value2 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine("");
-
-            float result = value1 / value2;
-
-            Console.WriteLine($"O resultado da operação é {result}");
-
-            Console.WriteLine("");
-        }
         static void Multiplication()
         {
             Console.Clear();
@@ -76,6 +72,24 @@
             Console.WriteLine("");
 
             float result = value1 * value2;
+
+            Console.WriteLine($"O resultado da operação é {result}");
+
+            Console.WriteLine("");
+        }
+        static void Division()
+        {
+            Console.Clear();
+
+            Console.WriteLine("Digite o primeiro valor: ");
+            float value1 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o segundo valor: ");
+            float value2 = float.Parse(Console.ReadLine());
+
+            Console.WriteLine("");
+
+            float result = value1 / value2;
 
             Console.WriteLine($"O resultado da operação é {result}");
 
