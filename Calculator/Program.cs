@@ -49,8 +49,10 @@
             Console.WriteLine($"O resultado da operação é {result}");
 
             Console.WriteLine("");
+
+            EndOfOperation();
         }
-        
+
         static void Subtraction()
         {
             Console.Clear();
@@ -68,6 +70,8 @@
             Console.WriteLine($"O resultado da operação é {result}");
 
             Console.WriteLine("");
+
+            EndOfOperation();
         }
         static void Multiplication()
         {
@@ -86,6 +90,8 @@
             Console.WriteLine($"O resultado da operação é {result}");
 
             Console.WriteLine("");
+
+            EndOfOperation();
         }
         static void Division()
         {
@@ -104,6 +110,14 @@
             Console.WriteLine($"O resultado da operação é {result}");
 
             Console.WriteLine("");
+
+            EndOfOperation();
+        }
+        static void EndOfOperation()
+        {
+            Console.Write("pressione alguma tecla para retornar ao menu: ");
+            Console.ReadKey();
+            Menu();
         }
     }
 }
